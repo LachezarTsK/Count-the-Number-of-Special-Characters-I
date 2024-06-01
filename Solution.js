@@ -18,7 +18,7 @@ var numberOfSpecialChars = function (word) {
 
     let numberOfSpecialChars = 0;
     for (let i = 0; i < ALPHABET_SIZE; ++i) {
-        numberOfSpecialChars += (lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i]);
+        numberOfSpecialChars += lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i];
     }
 
     return numberOfSpecialChars;
