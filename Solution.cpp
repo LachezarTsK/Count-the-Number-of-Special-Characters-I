@@ -23,7 +23,7 @@ public:
 
         int numberOfSpecialChars = 0;
         for (size_t i = 0; i < ALPHABET_SIZE; ++i) {
-            numberOfSpecialChars += (lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i]);
+            numberOfSpecialChars += lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i];
         }
 
         return numberOfSpecialChars;
