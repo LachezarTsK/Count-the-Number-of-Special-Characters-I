@@ -24,7 +24,7 @@ public class Solution
         int numberOfSpecialChars = 0;
         for (int i = 0; i < ALPHABET_SIZE; ++i)
         {
-            numberOfSpecialChars += (lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i]);
+            numberOfSpecialChars += lowerCaseAtLeastOnce[i] & upperCaseAtLeastOnce[i];
         }
 
         return numberOfSpecialChars;
